@@ -5,7 +5,7 @@ from hashlib import sha256
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://admin:motormojo@motormojo.crwa8q8k0lvn.ap-south-1.rds.amazonaws.com/user'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://username:password@motormojo.crwa8q8k0lvn.ap-south-1.rds.amazonaws.com/user'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
